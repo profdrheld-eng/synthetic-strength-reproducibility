@@ -92,3 +92,11 @@ licences; this repository contains no copies of their source distributions.
 AI tools assisted coding, checking and wording. Automated checks do not replace
 author responsibility, independent scientific validation or final human review.
 No paper author list or completed human approval is asserted here.
+
+The corrected code at commit `7a8615a2bac34a9a6066be0b56089e4249e685d5` has
+completed an authorized local empirical reproduction from a fresh GitHub clone
+and new environment. All 166 registered empirical entries and 545 numerical
+table cells were confirmed within the fixed tolerance. See the bounded
+[verification summary](docs/VERIFICATION.md); protected inputs, empirical outputs
+and detailed audit records remain local. Later documentation-only changes do
+not change the tested analysis code. The repository remains private.

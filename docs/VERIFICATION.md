@@ -1,7 +1,8 @@
 # Verification status, 15 October 2026
 
-This is a technical packaging check, not final human approval of the paper or a
-privacy certification. All checks in this round use artificial inputs only.
+This is a technical verification record, not final human approval of the paper
+or a privacy certification. Initial packaging and independent review used
+artificial inputs; a subsequent authorized empirical fresh run is recorded below.
 
 | Check | Status | Evidence and scope |
 |---|---|---|
@@ -14,7 +15,7 @@ privacy certification. All checks in this round use artificial inputs only.
 | Fixed result checker | PASS | All 145 entries checked against pre-existing artificial aggregates, maximum difference zero; this alone is not a fresh reproduction |
 | Official-environment smoke run | PASS | Artificial CLI plumbing only, not the full paper calculation |
 | Full artificial reproduction | PASS | All 30 cohorts, 6,000 CART releases and 6,000 natural comparisons completed; all 145 reported artificial values reproduced with zero difference |
-| Empirical data reproduction in this round | NOT RUN | No person data or historical parameter exports read; prior local empirical evidence remains separate |
+| Corrected-GitHub empirical fresh reproduction | PASS | Fresh checkout of commit `7a8615a2bac34a9a6066be0b56089e4249e685d5`, new environment, 166 registered entries and 545 numerical table cells confirmed |
 | Public empirical reference targets | NOT INCLUDED | The 166-entry empirical register and empirical aggregates are outside this minimal package |
 | Final human paper review / authorship | OPEN | No completed approval or author list asserted |
 | GitHub visibility | PRIVATE | Own account `profdrheld-eng`, repository `synthetic-strength-reproducibility`; no public release |
@@ -44,8 +45,8 @@ The helper itself does not assess scientific
 validity, secrets or rights; exact tracked-file review and selected secret/path
 checks are separate. Those checks cannot prove absence of every possible flaw.
 
-The artificial original-reference comparison and full manuscript's empirical
-claims remain scientifically distinct. No test here establishes anonymity,
+The artificial reproduction and empirical case-study reproduction remain
+scientifically distinct. No test here establishes anonymity,
 validates the numerical preservation limits, or completes ethics, authorship,
 data-release or final human approval decisions.
 
@@ -75,6 +76,39 @@ eight workflow regression tests failed against the baseline before repair.
 The full artificial reproduction above belongs to the baseline package; it was
 not repeated for these empirical workflow changes. Its 17 scientific kernel
 files and four fixtures remain byte-identical, and existing numerical function
-bodies remain unchanged. Author approval, empirical reproduction with protected
-inputs, other platforms and an anonymity finding remain outside this follow-up.
+bodies remain unchanged. At that independent-review stage, empirical reproduction
+with protected inputs had not yet been performed; it is documented below.
+Author approval, other platforms and an anonymity finding remain outside scope.
 Independent review narrows known defects; it does not prove absence of all bugs.
+
+## Authorized empirical fresh run, 15 October 2026
+
+After the independent fixes were accepted, corrected code commit
+`7a8615a2bac34a9a6066be0b56089e4249e685d5` was cloned directly from this private
+repository. A new local Python 3.12.14 environment installed all 14 pinned
+dependencies from verified official wheels using the corrected hash lock.
+All 57 artificial tests passed before the empirical commands. The historical
+reference audit, 1,000 joint CART releases, 200 full-cohort utility releases,
+110 controls and the aggregate, bootstrap and tie checks completed successfully.
+Methods, seeds, attack configurations and preservation limits were unchanged.
+
+All 166 empirical manuscript-register entries and 545 numerical table cells were
+confirmed. Twenty scientific JSON aggregate files were compared recursively;
+the maximum absolute numerical difference was `1.3877787807814457e-16`, below
+the unchanged `1e-10` tolerance (relative tolerance zero). Discrete quantities
+and pass decisions matched exactly. Expected runtime and corrected provenance
+metadata were treated separately from scientific values.
+
+Original inputs, prior results and the tested checkout remained unchanged.
+The calculation guard blocked old-result access, global site-packages and network
+connections; it is a Python audit guard, not an operating-system sandbox.
+Comparisons began only after calculations finished. No participant rows,
+empirical synthetic rows, historical parameter exports or empirical result files
+were uploaded. Detailed evidence and protected inputs remain local; this section
+is only a verification summary. No stored model was loaded.
+
+This reproduces the same implementation on the same macOS/ARM64 platform. It
+does not validate anonymity, scientific equivalence limits, independent
+implementation or author approval. The code at the tested commit is unchanged
+by this later documentation-only update. With unchanged code and inputs, no
+additional empirical fresh run is currently required.

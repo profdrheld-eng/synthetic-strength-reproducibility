@@ -84,8 +84,11 @@ Person contributions exist in memory for the coupled bootstrap. Only aggregates
 are written by these scripts; aggregate output is not an automatic publication
 or anonymity clearance. The tie check reads the original dataset again.
 
-No empirical run is claimed from running the artificial tests. Earlier local
-empirical reproduction evidence remains outside this minimal repository. A
-future externally authorized empirical reproduction must separately compare the
-full manuscript's 166 empirical target entries and tables; this repository does
-not distribute that empirical reference register.
+Running artificial tests alone does not establish empirical reproduction. A
+subsequent authorized local fresh run of corrected GitHub commit
+`7a8615a2bac34a9a6066be0b56089e4249e685d5` completed the documented empirical
+commands and confirmed all 166 empirical target entries and 545 numerical table
+cells; see [verification status](VERIFICATION.md). Detailed audit evidence,
+empirical outputs and the target register remain local and are not distributed
+in this minimal repository. Any later authorized reproduction must separately
+compare the protected empirical targets, not infer success from artificial tests.
