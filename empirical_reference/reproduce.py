@@ -5,6 +5,19 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 from reference_utils import *
+
+def write_audit_outputs(directory,results,manifest):
+    """Retain failed diagnostics, but issue a manifest only for a passed audit."""
+    report=directory/'AGGREGATE_RESULTS.json'
+    report.write_text(json.dumps(results,indent=2,allow_nan=False)+'\n')
+    required=('pc1_diagnostics_passed','pc1_weights_and_correlations_passed',
+              'historical_descriptives_passed','historical_z_validation_passed',
+              'historical_z_reconstruction_passed','svd_check_passed','source_files_unchanged')
+    failed=[key for key in required if results.get('checks',{}).get(key) is not True]
+    if failed:raise SystemExit('Reference audit failed: '+', '.join(failed))
+    metadata={**manifest,'aggregate_results_sha256':hashlib.sha256(report.read_bytes()).hexdigest()}
+    (directory/'INPUT_MANIFEST.json').write_text(json.dumps(metadata,indent=2)+'\n')
+
 def main():
     if sys.flags.optimize:raise SystemExit('Run without -O; validation assertions are required')
     if not all(os.environ.get(k) for k in ('STRENGTH_REFERENCE_OUTPUT','STRENGTH_ORIGINAL_PROJECT','STRENGTH_PARAMETERS')):
@@ -14,8 +27,8 @@ def main():
     repo=Path(__file__).resolve().parents[1]
     if HERE.resolve()==repo or repo in HERE.resolve().parents:raise SystemExit('Choose an output directory outside the repository')
     HERE.mkdir(parents=True,exist_ok=False)
-    PROJECT=Path(os.environ['STRENGTH_ORIGINAL_PROJECT'])
-    PARAMETERS=Path(os.environ['STRENGTH_PARAMETERS'])
+    PROJECT=Path(os.environ['STRENGTH_ORIGINAL_PROJECT']).resolve()
+    PARAMETERS=Path(os.environ['STRENGTH_PARAMETERS']).resolve()
     SOURCE=Path(__file__).resolve().parents[1]/'source'
     # Deny network connections while empirical data are in memory.
     def guard(event,args):
@@ -27,7 +40,7 @@ def main():
            SOURCE/'fixtures/S1_reference_constants.csv',
            PARAMETERS/'coefficients.csv',PARAMETERS/'residual_scales.csv']
     sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
-    before={str(p):sha(p) for p in paths}
+    before={str(p.resolve()):sha(p) for p in paths}
     z=pd.read_excel(paths[0],sheet_name='z_scores',usecols=['id','code','sex','age','bodymass','bodyheight',*RAW,*ZCOLS])
     t=pd.read_excel(paths[0],sheet_name='TE',header=4,usecols=['Probandencode']).dropna(subset=['Probandencode'])
     linked=join_keys(z,t)
@@ -154,7 +167,7 @@ def main():
      'published_formula_separate_comparison':{'variance_fraction':formula_variance,'weights':formula_weights.tolist(),
      'correlation_with_historical_pc1':float(np.corrcoef(formula_pc,computed.loc[complete,'Z_pc1'])[0,1]),
      'rmse_vs_historical_pc1':float(np.sqrt(np.mean((formula_pc-computed.loc[complete,'Z_pc1'].to_numpy())**2)))}}
-    assert before=={str(p):sha(p) for p in paths}
+    assert before=={str(p.resolve()):sha(p) for p in paths}
     status={'pc1_diagnostics_passed':all(r['passed'] for r in dcompare),'pc1_weights_and_correlations_passed':all(r['passed'] for r in pcaerrors),
      'historical_descriptives_passed':all(r['passed'] for r in desc_check),
      'historical_z_validation_passed':all(r['passed'] for r in validation_checks),
@@ -164,9 +177,10 @@ def main():
     results={'flow':flow,'input_quality':input_quality,'quality':quality,'pc1':pc1_reference,'pc1_diagnostic_comparison':dcompare,'pc1_loading_comparison':pcaerrors,
              'historical_z_validation_comparison':validation_checks,
              'historical_descriptive_comparison':desc_check,'score_reference_differences':difference_rows,'fixed_published_terms_refits':refit_rows,'checks':status}
-    (HERE/'AGGREGATE_RESULTS.json').write_text(json.dumps(results,indent=2,allow_nan=False)+'\n')
-    (HERE/'INPUT_MANIFEST.json').write_text(json.dumps({'files':before,'original_pc1_function_sha256':original_function_sha,
-     'scope':'Private local empirical audit; no row-level data copied or exported','runtime':{'python':platform.python_version(),'numpy':np.__version__,'pandas':pd.__version__}},indent=2)+'\n')
+    write_audit_outputs(HERE,results,{'schema_version':1,'files':before,
+     'roles':{'data':str(paths[0].resolve()),'coefficients':str(paths[8].resolve()),'residual_scales':str(paths[9].resolve())},
+     'original_pc1_function_sha256':original_function_sha,
+     'scope':'Private local empirical audit; no row-level data copied or exported','runtime':{'python':platform.python_version(),'numpy':np.__version__,'pandas':pd.__version__}})
     print(json.dumps({'flow':flow,'pc1':pc1_reference,'checks':status},indent=2))
 
 if __name__=='__main__':main()

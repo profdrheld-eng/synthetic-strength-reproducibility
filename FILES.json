@@ -1,5 +1,5 @@
 {
-  "scope": "Exact minimal code package; self excluded from hash map",
+  "scope": "Exact minimal tracked code package; self and ignored local caches excluded from hash map",
   "files": {
     ".gitattributes": {
       "sha256": "c6b6a04742f6c15321b2c8df93ef2e0e90a154c9de70231459f953e98918aaf5",
@@ -38,56 +38,56 @@
       "bytes": 2111
     },
     "docs/EMPIRICAL.md": {
-      "sha256": "3e0f04f15ee5d6d98dfeabaf85a41e4da33929f00d7c1859e78854a569f0bee9",
-      "bytes": 3997
+      "sha256": "6b2aed24ff972bf7e0a665e23ba0af6d5ad2434f1f4c953a3b71f83c5c95fe21",
+      "bytes": 5082
     },
     "docs/METHOD_MAP.md": {
       "sha256": "b251b9e31d26dc1738cc64b463662bec160ee35e0a3448ce63af923dc7569327",
       "bytes": 3835
     },
     "docs/PROVENANCE.md": {
-      "sha256": "2d6ce21cae79eefe610f5eb9d186b209b81e1928bfb5dadbb959dae62659ee66",
-      "bytes": 2417
+      "sha256": "7825f67e182180cbd85c59faf8ffd585402d6b891bbe9c7d39ab7ae09ccb615e",
+      "bytes": 2965
     },
     "docs/VERIFICATION.md": {
-      "sha256": "be982aaf3bb6ff19450bce165b7dde1519accac9646898e857b8ff08d169776d",
-      "bytes": 4060
+      "sha256": "62d78319f0c8fa2f4c14ced9fafc6631647c3da8944ea91298ebe225cae93154",
+      "bytes": 5921
     },
     "empirical/artificial_parameters.py": {
       "sha256": "9b478ebb094a182a3d81a40dcab49aefac048ed72c1934bc0914294a6e4856e5",
       "bytes": 890
     },
     "empirical/empirical.py": {
-      "sha256": "de072a7ebbbd9200ecc05256e91ca2c3b1d9a2c4597c3512fc0983cd1b844545",
-      "bytes": 10146
+      "sha256": "6a9951d80e6c2f54190b276e5de4ac10186e16bcc4c482f7ffaf2e8fee129afa",
+      "bytes": 10047
     },
     "empirical/run.py": {
-      "sha256": "1cf39eeb1fd1dd46089ad8effa4881ca127d59f7ca4bdc7ecefdc8db0ba7c216",
-      "bytes": 11678
+      "sha256": "0af16571701a9b7b963960a0e4d786bcb91f2c0bbc31c00d0a799a0b39f9bf7f",
+      "bytes": 14382
     },
     "empirical/test_empirical.py": {
       "sha256": "69f2cfbc2e63b75846a0a5164a4d0133beffa2e8fd033a08ca58661948f6e87d",
       "bytes": 3141
     },
     "empirical/verify.py": {
-      "sha256": "fb2f47c507e3b06d99112fd38a5f4913ae5857ccd60e4c97fbbc93663a48aaaa",
-      "bytes": 4305
+      "sha256": "e8cb76058eea28c040cf3dfef0b58928f1e15a2914af8181f42a0fc7ecb80731",
+      "bytes": 4328
     },
     "empirical/verify_additional.py": {
       "sha256": "6d9eafaab64c884558e56085aa0700d6ef3afd902091393eceaf9e07e8eced92",
       "bytes": 1556
     },
     "empirical/verify_copy_ties.py": {
-      "sha256": "7c8403e44a713b48fc7cb94a9030d27dbecc6f85aa6a2e87da79006a497f09af",
-      "bytes": 1097
+      "sha256": "5b11e0871d34ff321664d850c4355db03c9796cb7bcfcbcd22feade5560bf960",
+      "bytes": 1644
     },
     "empirical_reference/reference_utils.py": {
       "sha256": "50e963655fba7bcbd159a414e3c13de01e54edb474690f4457984488b48ea697",
       "bytes": 2498
     },
     "empirical_reference/reproduce.py": {
-      "sha256": "c9d7aa16dc43bbcae9bf152c6e4fe35737b44271b13974b4b0a03ed5c322ef44",
-      "bytes": 14369
+      "sha256": "5bbcfde5b73740383831e7d701867b5b95113d48fc6ee085e063f03567bc2f30",
+      "bytes": 15292
     },
     "empirical_reference/test_reference.py": {
       "sha256": "764020ca55c4a17cf7235445c484769656de0835137bc47bb84acdae76649752",
@@ -236,6 +236,10 @@
     "source/tests/test_study.py": {
       "sha256": "1fa28975389480c60789398767bbc5faff26615c0d3a984db687ee3b44fac25f",
       "bytes": 2512
+    },
+    "tests/test_empirical_preflight.py": {
+      "sha256": "fff021eb44195769bce8815a2cb3c470965c4ce7598a4b9d0549ae36a6f2702e",
+      "bytes": 9526
     },
     "tests/test_packaging.py": {
       "sha256": "0d363766a57bec7456b54f5a79569167d66f50c22d1bf2306ecbf87c05e13117",

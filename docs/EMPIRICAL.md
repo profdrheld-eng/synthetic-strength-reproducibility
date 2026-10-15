@@ -62,6 +62,22 @@ after execution. Do not generate or modify a reference manifest to make a
 mismatched input pass. Assertion failures require investigation. Do not use
 `python -O`. Local provenance outputs can contain file paths and input hashes.
 
+Run the reference command with the current code in a new output directory.
+Its version-1 manifest binds ten canonical input paths, the actual dataset and
+two parameter-file roles, and the aggregate audit report's SHA-256. Seven
+prerequisite audit checks must explicitly be true. A failed reference audit keeps
+its diagnostic report, exits unsuccessfully and does not issue an input manifest.
+Older manifests lacking these bindings are rejected; do not patch them manually.
+The CART entry validates these bindings before loading rows or parameters and
+explicitly initializes each spawned worker with the same approved parameter
+directory. The separate tie-check entry performs the same validated setup.
+
+The artificial mirror is tested separately by `run_tests.py`; the empirical
+aggregate verifier does not require a mirror file in the real output directory.
+The verifier rehashes registered source files, including the dataset bytes, but
+does not parse person rows. It therefore still requires authorized local input
+access and must not be described as reading aggregate files only.
+
 The empirical runner blocks `socket.connect` events while data are in memory.
 This is a limited in-process guard, not an operating-system security boundary.
 Person contributions exist in memory for the coupled bootstrap. Only aggregates

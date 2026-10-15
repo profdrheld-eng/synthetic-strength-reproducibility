@@ -1,6 +1,6 @@
 """Private empirical adapter; fixed scientific kernels, historical reference only."""
 from pathlib import Path
-import ast,csv,hashlib,json,sys,os
+import ast,csv,hashlib,json,sys
 from types import SimpleNamespace
 import numpy as np
 from scipy.stats import rankdata
@@ -35,8 +35,6 @@ def load_reference(directory):
     if any(not np.isfinite(s) or s<=0 for s in scale.values()):raise ValueError('Invalid residual scale')
     COEFF.clear();COEFF.update(coeff);SCALE.clear();SCALE.update(scale)
 
-if os.environ.get('STRENGTH_PARAMETERS'):
-    load_reference(os.environ['STRENGTH_PARAMETERS'])
 ORIGINAL=json.loads((SOURCE/'fixtures/privacy_shadow_parameters.json').read_text())
 ADAPTED=json.loads((SOURCE/'fixtures/privacy_adaptive_shadow_parameters.json').read_text())['original']
 

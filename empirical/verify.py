@@ -1,4 +1,4 @@
-"""Aggregate-only verification, no Excel/person data read."""
+"""Aggregate arithmetic verification; inputs rehashed, no person rows parsed."""
 from pathlib import Path
 import hashlib,json,os,sys
 if sys.flags.optimize:raise SystemExit('Run without -O; validation assertions are required')
@@ -54,6 +54,5 @@ for method in methods:
                 assert abs(value['excess']-(value['member']-value['control']))<1e-12
                 assert value['conditional_person_cluster_interval'][0]<=value['conditional_person_cluster_interval'][1]
 assert sum(len(x.get('privacy',[])) for x in rows)==3330
-assert read('SYNTHETIC_MIRROR.json')['passed']
-(HERE/'VERIFICATION.json').write_text(json.dumps({'passed':True,'utility_rows':len(rows),'threshold_decisions_recomputed':checks,'paired_privacy_conditions':3330,'privacy_summary_recomputed':True,'copy_control_exact_frozen_extended_inference_member_scores_one':True,'copy_control_demographic_ties_not_assumed_absent':True,'input_hashes_unchanged':True,'source_person_data_read_by_verifier':False},indent=2)+'\n')
+(HERE/'VERIFICATION.json').write_text(json.dumps({'passed':True,'utility_rows':len(rows),'threshold_decisions_recomputed':checks,'paired_privacy_conditions':3330,'privacy_summary_recomputed':True,'copy_control_exact_frozen_extended_inference_member_scores_one':True,'copy_control_demographic_ties_not_assumed_absent':True,'input_hashes_unchanged':True,'input_files_hashed':True,'source_person_rows_parsed':False,'artificial_mirror_required':False},indent=2)+'\n')
 print(f'PASS: {len(rows)} utility records, {checks} unchanged threshold decisions, 3330 paired privacy conditions')

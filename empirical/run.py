@@ -18,6 +18,48 @@ HERE=Path(os.environ.get('STRENGTH_EMPIRICAL_OUTPUT','UNCONFIGURED_EMPIRICAL_OUT
 DATA=Path(os.environ.get('STRENGTH_DATA','UNCONFIGURED_DATA'))
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 
+REFERENCE_CHECKS=('pc1_diagnostics_passed','pc1_weights_and_correlations_passed',
+                  'historical_descriptives_passed','historical_z_validation_passed',
+                  'historical_z_reconstruction_passed','svd_check_passed','source_files_unchanged')
+
+def validate_reference_inputs():
+    """Bind actual input roles to a successful reference audit before loading rows."""
+    audit=Path(os.environ['STRENGTH_REFERENCE_OUTPUT']).resolve()
+    manifest_path=audit/'INPUT_MANIFEST.json';report_path=audit/'AGGREGATE_RESULTS.json'
+    manifest=json.loads(manifest_path.read_text())
+    if manifest.get('schema_version')!=1:
+        raise ValueError('Regenerate the reference audit with this repository version')
+    files=manifest.get('files');roles=manifest.get('roles')
+    if not isinstance(files,dict) or len(files)!=10:
+        raise ValueError('Exactly ten audited reference inputs are required')
+    for name,digest in files.items():
+        if not isinstance(name,str) or not Path(name).is_absolute() or str(Path(name).resolve())!=name:
+            raise ValueError('Reference input paths must be canonical and absolute')
+        if not isinstance(digest,str) or len(digest)!=64 or any(c not in '0123456789abcdef' for c in digest):
+            raise ValueError('Invalid reference input digest')
+    parameters=Path(os.environ['STRENGTH_PARAMETERS']).resolve()
+    expected={'data':DATA.resolve(),'coefficients':(parameters/'coefficients.csv').resolve(),
+              'residual_scales':(parameters/'residual_scales.csv').resolve()}
+    if not isinstance(roles,dict) or set(roles)!=set(expected):
+        raise ValueError('Missing audited data/parameter role bindings')
+    for role,path in expected.items():
+        if roles[role]!=str(path) or str(path) not in files:
+            raise ValueError(f'Configured {role} is not the audited input')
+    report_digest=manifest.get('aggregate_results_sha256')
+    if not isinstance(report_digest,str) or sha(report_path)!=report_digest:
+        raise ValueError('Reference audit report changed or is not bound to the manifest')
+    checks=json.loads(report_path.read_text()).get('checks',{})
+    if not isinstance(checks,dict) or any(checks.get(name) is not True for name in REFERENCE_CHECKS):
+        raise ValueError('Reference audit did not pass all prerequisite checks')
+    for name,digest in files.items():
+        if sha(Path(name))!=digest:raise ValueError('Previously audited input changed')
+    return {**files,str(manifest_path):sha(manifest_path),str(report_path):report_digest}
+
+def worker_pool():
+    """Initialize each spawned worker with the explicitly approved reference."""
+    return ProcessPoolExecutor(max_workers=3,initializer=e.load_reference,
+                               initargs=(str(Path(os.environ['STRENGTH_PARAMETERS']).resolve()),))
+
 def save(name,value):
     (HERE/name).write_text(json.dumps(value,indent=2,allow_nan=False,default=lambda x:x.item() if isinstance(x,np.generic) else x.tolist())+'\n')
 
@@ -129,6 +171,8 @@ def main():
     if not all(os.environ.get(k) for k in required):raise SystemExit('Missing explicit local input/output configuration')
     if SCRIPT_ROOT.parent.resolve() in HERE.resolve().parents or HERE.resolve()==SCRIPT_ROOT.parent.resolve():
         raise SystemExit('Choose an output directory outside the repository')
+    old={} if fixture else validate_reference_inputs()
+    e.load_reference(os.environ['STRENGTH_PARAMETERS'])
     HERE.mkdir(parents=True,exist_ok=False)
     if fixture:
         for method in e.METHODS:
@@ -138,14 +182,12 @@ def main():
                 primary_estimate(num,den,synthetic()['sex'])
         save('SYNTHETIC_MIRROR.json',{'passed':True,'cohort_n':374,'fold_method_cases':10,'privacy_configurations':60,'row_export':False,'seconds':time.time()-start})
         print('Synthetic full-flow mirror passed',flush=True);return
-    old=json.loads((Path(os.environ['STRENGTH_REFERENCE_OUTPUT'])/'INPUT_MANIFEST.json').read_text())['files']
-    for name,expected in old.items():assert sha(Path(name))==expected, 'Previously audited input changed'
     frozen={str(p):sha(p) for p in [SCRIPT_ROOT/'empirical.py',SCRIPT_ROOT/'run.py',SCRIPT_ROOT/'test_empirical.py',*sorted(e.SOURCE.rglob('*.py')),*sorted((e.SOURCE/'fixtures').glob('privacy*parameters.json'))]}
     frozen.update(old);save('FROZEN_INPUTS.json',{'files':frozen,'limits':e.scores.LIMITS,'methods':e.synthesis.VARIANTS,'endpoints':e.ENDPOINTS,'knowledge':e.LEVELS,'bootstrap_repetitions':2000,'runtime':{'python':platform.python_version(),'numpy':np.__version__,'pandas':pd.__version__}})
     d=load();folds=e.split_indices(d)
     save('DESIGN.json',{'n_source':393,'n_linked':384,'n_complete':374,'female':186,'male':188,'folds':[{'fold':i,'training_n':374-len(h),'heldout_n':len(h),'heldout_female':sum(d['sex'][j]=='female' for j in h),'heldout_male':sum(d['sex'][j]=='male' for j in h),'split_sha256':hashlib.sha256(h.tobytes()).hexdigest()} for i,h in enumerate(folds)],'historical_pc1_variance':e.fit_pc1(d['z']).variance_fraction,'historical_z_max_error':float(np.max(abs((np.log(d['strength'])-e.eta(d))/e.scale(d)-d['z'])))})
     rows=[];num={m:np.zeros((3,2,2,7,374)) for m in e.METHODS};den={m:np.zeros((2,374)) for m in e.METHODS}
-    with ProcessPoolExecutor(max_workers=3) as pool:
+    with worker_pool() as pool:
         jobs=[pool.submit(task,m,f) for m in e.METHODS for f in range(5)]
         for job in as_completed(jobs):
             method,fold,rr,nn,dd=job.result();rows.extend(rr)

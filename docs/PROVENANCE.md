@@ -22,6 +22,14 @@ reference audit's network guard moved into `main()` without changing its body.
 validate the scientific implementation, so tests and arithmetic checks remain
 necessary.
 
+A subsequent independent agent review identified missing empirical input-role
+binding, ignored failed reference-audit status and an incompatible mirror-file
+requirement. These workflow checks were corrected without changing numerical
+functions. Parameter loading is now explicit after preflight, with a process
+initializer for spawned workers and validated setup in the separate tie-check
+entry. Reference audit manifests now use schema version 1; older unbound manifests
+are rejected. Artificial regression tests cover failure and success paths.
+
 All seven base dependency hashes and the pandas hash matched official PyPI
 artefacts. Six optional Excel-support wheels in the earlier local environment
 were local builds. Their hashes were replaced with official PyPI wheel hashes

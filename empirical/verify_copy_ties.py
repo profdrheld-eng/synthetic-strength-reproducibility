@@ -2,8 +2,17 @@
 import numpy as np
 import run as r
 import empirical as e
+import os,sys
 
 def main():
+    if sys.flags.optimize:raise SystemExit('Run without -O; validation assertions are required')
+    if not os.environ.get('STRENGTH_EMPIRICAL_OUTPUT') or not r.HERE.is_dir():
+        raise SystemExit('Existing external empirical output directory required')
+    repo=r.SCRIPT_ROOT.parent.resolve()
+    if r.HERE.resolve()==repo or repo in r.HERE.resolve().parents:
+        raise SystemExit('Choose an output directory outside the repository')
+    r.validate_reference_inputs()
+    e.load_reference(os.environ['STRENGTH_PARAMETERS'])
     d=r.load();checks=[]
     for fold,h in enumerate(e.split_indices(d)):
         t=np.setdiff1d(np.arange(374),h);m=e.balanced_members(d,t,h,143000000+1000*fold+100)
