@@ -1,0 +1,2235 @@
+{
+  "absolute_tolerance": 1e-10,
+  "values": [
+    {
+      "label": "artificial/000/pass/original/independent",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "utility",
+        "independent",
+        "passes"
+      ],
+      "value": 1,
+      "original_label": "pass/original/independent",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/001/pass_rate/original/independent",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "utility",
+        "independent",
+        "all_pass",
+        "mean"
+      ],
+      "value": 0.001,
+      "original_label": "pass_rate/original/independent",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/002/pass_ci/original/independent",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "utility",
+        "independent",
+        "all_pass",
+        "bootstrap95"
+      ],
+      "value": [
+        0.0,
+        0.003
+      ],
+      "original_label": "pass_ci/original/independent",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/003/tail_fail/original/independent",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "independent",
+        "failures",
+        "z_tail_max"
+      ],
+      "value": 985,
+      "original_label": "tail_fail/original/independent",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/004/tail_only_fail/original/independent",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "independent",
+        "sole_failures",
+        "z_tail_max"
+      ],
+      "value": 9,
+      "original_label": "tail_only_fail/original/independent",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/005/pass/original/bootstrap",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "utility",
+        "bootstrap",
+        "passes"
+      ],
+      "value": 31,
+      "original_label": "pass/original/bootstrap",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/006/pass_rate/original/bootstrap",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "utility",
+        "bootstrap",
+        "all_pass",
+        "mean"
+      ],
+      "value": 0.031,
+      "original_label": "pass_rate/original/bootstrap",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/007/pass_ci/original/bootstrap",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "utility",
+        "bootstrap",
+        "all_pass",
+        "bootstrap95"
+      ],
+      "value": [
+        0.019,
+        0.045
+      ],
+      "original_label": "pass_ci/original/bootstrap",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/008/tail_fail/original/bootstrap",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "bootstrap",
+        "failures",
+        "z_tail_max"
+      ],
+      "value": 895,
+      "original_label": "tail_fail/original/bootstrap",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/009/tail_only_fail/original/bootstrap",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "bootstrap",
+        "sole_failures",
+        "z_tail_max"
+      ],
+      "value": 103,
+      "original_label": "tail_only_fail/original/bootstrap",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/010/pass/original/depth8_outcomes_first",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "utility",
+        "depth8_outcomes_first",
+        "passes"
+      ],
+      "value": 19,
+      "original_label": "pass/original/depth8_outcomes_first",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/011/pass_rate/original/depth8_outcomes_first",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "utility",
+        "depth8_outcomes_first",
+        "all_pass",
+        "mean"
+      ],
+      "value": 0.019,
+      "original_label": "pass_rate/original/depth8_outcomes_first",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/012/pass_ci/original/depth8_outcomes_first",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "utility",
+        "depth8_outcomes_first",
+        "all_pass",
+        "bootstrap95"
+      ],
+      "value": [
+        0.008,
+        0.031
+      ],
+      "original_label": "pass_ci/original/depth8_outcomes_first",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/013/tail_fail/original/depth8_outcomes_first",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_outcomes_first",
+        "failures",
+        "z_tail_max"
+      ],
+      "value": 927,
+      "original_label": "tail_fail/original/depth8_outcomes_first",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/014/tail_only_fail/original/depth8_outcomes_first",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_outcomes_first",
+        "sole_failures",
+        "z_tail_max"
+      ],
+      "value": 87,
+      "original_label": "tail_only_fail/original/depth8_outcomes_first",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/015/pass/original/depth8_interleaved",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "utility",
+        "depth8_interleaved",
+        "passes"
+      ],
+      "value": 14,
+      "original_label": "pass/original/depth8_interleaved",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/016/pass_rate/original/depth8_interleaved",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "utility",
+        "depth8_interleaved",
+        "all_pass",
+        "mean"
+      ],
+      "value": 0.014000000000000002,
+      "original_label": "pass_rate/original/depth8_interleaved",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/017/pass_ci/original/depth8_interleaved",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "utility",
+        "depth8_interleaved",
+        "all_pass",
+        "bootstrap95"
+      ],
+      "value": [
+        0.006,
+        0.023
+      ],
+      "original_label": "pass_ci/original/depth8_interleaved",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/018/tail_fail/original/depth8_interleaved",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_interleaved",
+        "failures",
+        "z_tail_max"
+      ],
+      "value": 909,
+      "original_label": "tail_fail/original/depth8_interleaved",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/019/tail_only_fail/original/depth8_interleaved",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_interleaved",
+        "sole_failures",
+        "z_tail_max"
+      ],
+      "value": 54,
+      "original_label": "tail_only_fail/original/depth8_interleaved",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/020/pass/heavy_tails/independent",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "utility",
+        "independent",
+        "passes"
+      ],
+      "value": 1,
+      "original_label": "pass/heavy_tails/independent",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/021/pass_rate/heavy_tails/independent",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "utility",
+        "independent",
+        "all_pass",
+        "mean"
+      ],
+      "value": 0.001,
+      "original_label": "pass_rate/heavy_tails/independent",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/022/pass_ci/heavy_tails/independent",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "utility",
+        "independent",
+        "all_pass",
+        "bootstrap95"
+      ],
+      "value": [
+        0.0,
+        0.003
+      ],
+      "original_label": "pass_ci/heavy_tails/independent",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/023/tail_fail/heavy_tails/independent",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "independent",
+        "failures",
+        "z_tail_max"
+      ],
+      "value": 990,
+      "original_label": "tail_fail/heavy_tails/independent",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/024/tail_only_fail/heavy_tails/independent",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "independent",
+        "sole_failures",
+        "z_tail_max"
+      ],
+      "value": 5,
+      "original_label": "tail_only_fail/heavy_tails/independent",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/025/pass/heavy_tails/bootstrap",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "utility",
+        "bootstrap",
+        "passes"
+      ],
+      "value": 8,
+      "original_label": "pass/heavy_tails/bootstrap",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/026/pass_rate/heavy_tails/bootstrap",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "utility",
+        "bootstrap",
+        "all_pass",
+        "mean"
+      ],
+      "value": 0.008,
+      "original_label": "pass_rate/heavy_tails/bootstrap",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/027/pass_ci/heavy_tails/bootstrap",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "utility",
+        "bootstrap",
+        "all_pass",
+        "bootstrap95"
+      ],
+      "value": [
+        0.004,
+        0.013000000000000001
+      ],
+      "original_label": "pass_ci/heavy_tails/bootstrap",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/028/tail_fail/heavy_tails/bootstrap",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "bootstrap",
+        "failures",
+        "z_tail_max"
+      ],
+      "value": 950,
+      "original_label": "tail_fail/heavy_tails/bootstrap",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/029/tail_only_fail/heavy_tails/bootstrap",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "bootstrap",
+        "sole_failures",
+        "z_tail_max"
+      ],
+      "value": 61,
+      "original_label": "tail_only_fail/heavy_tails/bootstrap",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/030/pass/heavy_tails/depth8_outcomes_first",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "utility",
+        "depth8_outcomes_first",
+        "passes"
+      ],
+      "value": 3,
+      "original_label": "pass/heavy_tails/depth8_outcomes_first",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/031/pass_rate/heavy_tails/depth8_outcomes_first",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "utility",
+        "depth8_outcomes_first",
+        "all_pass",
+        "mean"
+      ],
+      "value": 0.003,
+      "original_label": "pass_rate/heavy_tails/depth8_outcomes_first",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/032/pass_ci/heavy_tails/depth8_outcomes_first",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "utility",
+        "depth8_outcomes_first",
+        "all_pass",
+        "bootstrap95"
+      ],
+      "value": [
+        0.0,
+        0.008
+      ],
+      "original_label": "pass_ci/heavy_tails/depth8_outcomes_first",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/033/tail_fail/heavy_tails/depth8_outcomes_first",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "depth8_outcomes_first",
+        "failures",
+        "z_tail_max"
+      ],
+      "value": 942,
+      "original_label": "tail_fail/heavy_tails/depth8_outcomes_first",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/034/tail_only_fail/heavy_tails/depth8_outcomes_first",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "depth8_outcomes_first",
+        "sole_failures",
+        "z_tail_max"
+      ],
+      "value": 27,
+      "original_label": "tail_only_fail/heavy_tails/depth8_outcomes_first",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/035/pass/heavy_tails/depth8_interleaved",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "utility",
+        "depth8_interleaved",
+        "passes"
+      ],
+      "value": 2,
+      "original_label": "pass/heavy_tails/depth8_interleaved",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/036/pass_rate/heavy_tails/depth8_interleaved",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "utility",
+        "depth8_interleaved",
+        "all_pass",
+        "mean"
+      ],
+      "value": 0.002,
+      "original_label": "pass_rate/heavy_tails/depth8_interleaved",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/037/pass_ci/heavy_tails/depth8_interleaved",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "utility",
+        "depth8_interleaved",
+        "all_pass",
+        "bootstrap95"
+      ],
+      "value": [
+        0.0,
+        0.005
+      ],
+      "original_label": "pass_ci/heavy_tails/depth8_interleaved",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/038/tail_fail/heavy_tails/depth8_interleaved",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "depth8_interleaved",
+        "failures",
+        "z_tail_max"
+      ],
+      "value": 963,
+      "original_label": "tail_fail/heavy_tails/depth8_interleaved",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/039/tail_only_fail/heavy_tails/depth8_interleaved",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "depth8_interleaved",
+        "sole_failures",
+        "z_tail_max"
+      ],
+      "value": 4,
+      "original_label": "tail_only_fail/heavy_tails/depth8_interleaved",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/040/pass/shifted_mixed/independent",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "utility",
+        "independent",
+        "passes"
+      ],
+      "value": 0,
+      "original_label": "pass/shifted_mixed/independent",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/041/pass_rate/shifted_mixed/independent",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "utility",
+        "independent",
+        "all_pass",
+        "mean"
+      ],
+      "value": 0.0,
+      "original_label": "pass_rate/shifted_mixed/independent",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/042/pass_ci/shifted_mixed/independent",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "utility",
+        "independent",
+        "all_pass",
+        "bootstrap95"
+      ],
+      "value": [
+        0.0,
+        0.0
+      ],
+      "original_label": "pass_ci/shifted_mixed/independent",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/043/tail_fail/shifted_mixed/independent",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "independent",
+        "failures",
+        "z_tail_max"
+      ],
+      "value": 990,
+      "original_label": "tail_fail/shifted_mixed/independent",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/044/tail_only_fail/shifted_mixed/independent",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "independent",
+        "sole_failures",
+        "z_tail_max"
+      ],
+      "value": 13,
+      "original_label": "tail_only_fail/shifted_mixed/independent",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/045/pass/shifted_mixed/bootstrap",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "utility",
+        "bootstrap",
+        "passes"
+      ],
+      "value": 19,
+      "original_label": "pass/shifted_mixed/bootstrap",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/046/pass_rate/shifted_mixed/bootstrap",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "utility",
+        "bootstrap",
+        "all_pass",
+        "mean"
+      ],
+      "value": 0.019000000000000003,
+      "original_label": "pass_rate/shifted_mixed/bootstrap",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/047/pass_ci/shifted_mixed/bootstrap",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "utility",
+        "bootstrap",
+        "all_pass",
+        "bootstrap95"
+      ],
+      "value": [
+        0.011,
+        0.028999999999999998
+      ],
+      "original_label": "pass_ci/shifted_mixed/bootstrap",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/048/tail_fail/shifted_mixed/bootstrap",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "bootstrap",
+        "failures",
+        "z_tail_max"
+      ],
+      "value": 937,
+      "original_label": "tail_fail/shifted_mixed/bootstrap",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/049/tail_only_fail/shifted_mixed/bootstrap",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "bootstrap",
+        "sole_failures",
+        "z_tail_max"
+      ],
+      "value": 94,
+      "original_label": "tail_only_fail/shifted_mixed/bootstrap",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/050/pass/shifted_mixed/depth8_outcomes_first",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "utility",
+        "depth8_outcomes_first",
+        "passes"
+      ],
+      "value": 13,
+      "original_label": "pass/shifted_mixed/depth8_outcomes_first",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/051/pass_rate/shifted_mixed/depth8_outcomes_first",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "utility",
+        "depth8_outcomes_first",
+        "all_pass",
+        "mean"
+      ],
+      "value": 0.013000000000000001,
+      "original_label": "pass_rate/shifted_mixed/depth8_outcomes_first",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/052/pass_ci/shifted_mixed/depth8_outcomes_first",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "utility",
+        "depth8_outcomes_first",
+        "all_pass",
+        "bootstrap95"
+      ],
+      "value": [
+        0.006,
+        0.021
+      ],
+      "original_label": "pass_ci/shifted_mixed/depth8_outcomes_first",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/053/tail_fail/shifted_mixed/depth8_outcomes_first",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "depth8_outcomes_first",
+        "failures",
+        "z_tail_max"
+      ],
+      "value": 926,
+      "original_label": "tail_fail/shifted_mixed/depth8_outcomes_first",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/054/tail_only_fail/shifted_mixed/depth8_outcomes_first",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "depth8_outcomes_first",
+        "sole_failures",
+        "z_tail_max"
+      ],
+      "value": 67,
+      "original_label": "tail_only_fail/shifted_mixed/depth8_outcomes_first",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/055/pass/shifted_mixed/depth8_interleaved",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "utility",
+        "depth8_interleaved",
+        "passes"
+      ],
+      "value": 7,
+      "original_label": "pass/shifted_mixed/depth8_interleaved",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/056/pass_rate/shifted_mixed/depth8_interleaved",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "utility",
+        "depth8_interleaved",
+        "all_pass",
+        "mean"
+      ],
+      "value": 0.007000000000000001,
+      "original_label": "pass_rate/shifted_mixed/depth8_interleaved",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/057/pass_ci/shifted_mixed/depth8_interleaved",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "utility",
+        "depth8_interleaved",
+        "all_pass",
+        "bootstrap95"
+      ],
+      "value": [
+        0.0,
+        0.014000000000000002
+      ],
+      "original_label": "pass_ci/shifted_mixed/depth8_interleaved",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/058/tail_fail/shifted_mixed/depth8_interleaved",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "depth8_interleaved",
+        "failures",
+        "z_tail_max"
+      ],
+      "value": 945,
+      "original_label": "tail_fail/shifted_mixed/depth8_interleaved",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/059/tail_only_fail/shifted_mixed/depth8_interleaved",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "depth8_interleaved",
+        "sole_failures",
+        "z_tail_max"
+      ],
+      "value": 25,
+      "original_label": "tail_only_fail/shifted_mixed/depth8_interleaved",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/060/tail_shift/original/depth8_outcomes_first/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_outcomes_first",
+        "tails",
+        "female/DL/q95",
+        "delta",
+        "mean"
+      ],
+      "value": 0.005690107896946386,
+      "original_label": "tail_shift/original/depth8_outcomes_first/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/061/tail_absolute/original/depth8_outcomes_first/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_outcomes_first",
+        "tails",
+        "female/DL/q95",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.1227067278881141,
+      "original_label": "tail_absolute/original/depth8_outcomes_first/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/062/tail_exceed/original/depth8_outcomes_first/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_outcomes_first",
+        "tails",
+        "female/DL/q95",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.242,
+      "original_label": "tail_exceed/original/depth8_outcomes_first/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/063/tail_exceed/original/independent/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "independent",
+        "tails",
+        "female/DL/q95",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.257,
+      "original_label": "tail_exceed/original/independent/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/064/tail_exceed/original/bootstrap/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "bootstrap",
+        "tails",
+        "female/DL/q95",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.25,
+      "original_label": "tail_exceed/original/bootstrap/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/065/tail_shift/original/depth8_interleaved/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_interleaved",
+        "tails",
+        "female/DL/q95",
+        "delta",
+        "mean"
+      ],
+      "value": -0.0009585473704773461,
+      "original_label": "tail_shift/original/depth8_interleaved/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/066/tail_absolute/original/depth8_interleaved/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_interleaved",
+        "tails",
+        "female/DL/q95",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.11301598742381991,
+      "original_label": "tail_absolute/original/depth8_interleaved/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/067/tail_exceed/original/depth8_interleaved/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_interleaved",
+        "tails",
+        "female/DL/q95",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.229,
+      "original_label": "tail_exceed/original/depth8_interleaved/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/068/tail_exceed/original/independent/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "independent",
+        "tails",
+        "female/DL/q95",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.257,
+      "original_label": "tail_exceed/original/independent/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/069/tail_exceed/original/bootstrap/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "bootstrap",
+        "tails",
+        "female/DL/q95",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.25,
+      "original_label": "tail_exceed/original/bootstrap/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/070/tail_shift/heavy_tails/depth8_outcomes_first/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "depth8_outcomes_first",
+        "tails",
+        "female/DL/q95",
+        "delta",
+        "mean"
+      ],
+      "value": -0.016678260682342076,
+      "original_label": "tail_shift/heavy_tails/depth8_outcomes_first/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/071/tail_absolute/heavy_tails/depth8_outcomes_first/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "depth8_outcomes_first",
+        "tails",
+        "female/DL/q95",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.15982836673021913,
+      "original_label": "tail_absolute/heavy_tails/depth8_outcomes_first/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/072/tail_exceed/heavy_tails/depth8_outcomes_first/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "depth8_outcomes_first",
+        "tails",
+        "female/DL/q95",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.368,
+      "original_label": "tail_exceed/heavy_tails/depth8_outcomes_first/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/073/tail_exceed/heavy_tails/independent/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "independent",
+        "tails",
+        "female/DL/q95",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.29000000000000004,
+      "original_label": "tail_exceed/heavy_tails/independent/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/074/tail_exceed/heavy_tails/bootstrap/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "bootstrap",
+        "tails",
+        "female/DL/q95",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.355,
+      "original_label": "tail_exceed/heavy_tails/bootstrap/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/075/tail_shift/heavy_tails/depth8_interleaved/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "depth8_interleaved",
+        "tails",
+        "female/DL/q95",
+        "delta",
+        "mean"
+      ],
+      "value": -0.02264054273131566,
+      "original_label": "tail_shift/heavy_tails/depth8_interleaved/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/076/tail_absolute/heavy_tails/depth8_interleaved/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "depth8_interleaved",
+        "tails",
+        "female/DL/q95",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.15144568794230362,
+      "original_label": "tail_absolute/heavy_tails/depth8_interleaved/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/077/tail_exceed/heavy_tails/depth8_interleaved/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "depth8_interleaved",
+        "tails",
+        "female/DL/q95",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.347,
+      "original_label": "tail_exceed/heavy_tails/depth8_interleaved/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/078/tail_exceed/heavy_tails/independent/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "independent",
+        "tails",
+        "female/DL/q95",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.29000000000000004,
+      "original_label": "tail_exceed/heavy_tails/independent/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/079/tail_exceed/heavy_tails/bootstrap/female/DL/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "bootstrap",
+        "tails",
+        "female/DL/q95",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.355,
+      "original_label": "tail_exceed/heavy_tails/bootstrap/female/DL/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/080/tail_shift/shifted_mixed/depth8_outcomes_first/female/BP/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "depth8_outcomes_first",
+        "tails",
+        "female/BP/q95",
+        "delta",
+        "mean"
+      ],
+      "value": -0.0024481813796816115,
+      "original_label": "tail_shift/shifted_mixed/depth8_outcomes_first/female/BP/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/081/tail_absolute/shifted_mixed/depth8_outcomes_first/female/BP/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "depth8_outcomes_first",
+        "tails",
+        "female/BP/q95",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.13007313764685663,
+      "original_label": "tail_absolute/shifted_mixed/depth8_outcomes_first/female/BP/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/082/tail_exceed/shifted_mixed/depth8_outcomes_first/female/BP/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "depth8_outcomes_first",
+        "tails",
+        "female/BP/q95",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.25,
+      "original_label": "tail_exceed/shifted_mixed/depth8_outcomes_first/female/BP/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/083/tail_exceed/shifted_mixed/independent/female/BP/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "independent",
+        "tails",
+        "female/BP/q95",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.43,
+      "original_label": "tail_exceed/shifted_mixed/independent/female/BP/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/084/tail_exceed/shifted_mixed/bootstrap/female/BP/q95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "bootstrap",
+        "tails",
+        "female/BP/q95",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.255,
+      "original_label": "tail_exceed/shifted_mixed/bootstrap/female/BP/q95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/085/tail_shift/shifted_mixed/depth8_interleaved/female/BP/q05",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "depth8_interleaved",
+        "tails",
+        "female/BP/q05",
+        "delta",
+        "mean"
+      ],
+      "value": 0.07204220793451654,
+      "original_label": "tail_shift/shifted_mixed/depth8_interleaved/female/BP/q05",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/086/tail_absolute/shifted_mixed/depth8_interleaved/female/BP/q05",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "depth8_interleaved",
+        "tails",
+        "female/BP/q05",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.13733971866932831,
+      "original_label": "tail_absolute/shifted_mixed/depth8_interleaved/female/BP/q05",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/087/tail_exceed/shifted_mixed/depth8_interleaved/female/BP/q05",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "depth8_interleaved",
+        "tails",
+        "female/BP/q05",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.263,
+      "original_label": "tail_exceed/shifted_mixed/depth8_interleaved/female/BP/q05",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/088/tail_exceed/shifted_mixed/independent/female/BP/q05",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "independent",
+        "tails",
+        "female/BP/q05",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.44200000000000006,
+      "original_label": "tail_exceed/shifted_mixed/independent/female/BP/q05",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/089/tail_exceed/shifted_mixed/bootstrap/female/BP/q05",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "bootstrap",
+        "tails",
+        "female/BP/q05",
+        "exceeded",
+        "mean"
+      ],
+      "value": 0.256,
+      "original_label": "tail_exceed/shifted_mixed/bootstrap/female/BP/q05",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/090/rel/original/depth8_outcomes_first/female/BP/height_mass_interaction/pearson/reference",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_outcomes_first",
+        "relationships",
+        "female/BP/height_mass_interaction/pearson",
+        "reference",
+        "mean"
+      ],
+      "value": 0.4255661322442535,
+      "original_label": "rel/original/depth8_outcomes_first/female/BP/height_mass_interaction/pearson/reference",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/091/rel/original/depth8_outcomes_first/female/BP/height_mass_interaction/pearson/release",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_outcomes_first",
+        "relationships",
+        "female/BP/height_mass_interaction/pearson",
+        "release",
+        "mean"
+      ],
+      "value": 0.26988055524207716,
+      "original_label": "rel/original/depth8_outcomes_first/female/BP/height_mass_interaction/pearson/release",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/092/rel/original/depth8_outcomes_first/female/BP/height_mass_interaction/pearson/absolute_change",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_outcomes_first",
+        "relationships",
+        "female/BP/height_mass_interaction/pearson",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.15790981405233903,
+      "original_label": "rel/original/depth8_outcomes_first/female/BP/height_mass_interaction/pearson/absolute_change",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/093/rel/original/independent/female/BP/height_mass_interaction/pearson/absolute_change",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "independent",
+        "relationships",
+        "female/BP/height_mass_interaction/pearson",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.06077281842772312,
+      "original_label": "rel/original/independent/female/BP/height_mass_interaction/pearson/absolute_change",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/094/rel/original/bootstrap/female/BP/height_mass_interaction/pearson/absolute_change",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "bootstrap",
+        "relationships",
+        "female/BP/height_mass_interaction/pearson",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.04915395736703061,
+      "original_label": "rel/original/bootstrap/female/BP/height_mass_interaction/pearson/absolute_change",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/095/rel_diff/original/depth8_outcomes_first/female/BP/height_mass_interaction/pearson",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_outcomes_first",
+        "paired_differences",
+        "bootstrap",
+        "relationships",
+        "female/BP/height_mass_interaction/pearson",
+        "mean"
+      ],
+      "value": 0.10875585668530845,
+      "original_label": "rel_diff/original/depth8_outcomes_first/female/BP/height_mass_interaction/pearson",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/096/rel_diff_ci/original/depth8_outcomes_first/female/BP/height_mass_interaction/pearson",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_outcomes_first",
+        "paired_differences",
+        "bootstrap",
+        "relationships",
+        "female/BP/height_mass_interaction/pearson",
+        "bootstrap95"
+      ],
+      "value": [
+        0.0736212058398107,
+        0.1450036782657559
+      ],
+      "original_label": "rel_diff_ci/original/depth8_outcomes_first/female/BP/height_mass_interaction/pearson",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/097/rel/original/depth8_interleaved/male/BP/height_mass_interaction/pearson/reference",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_interleaved",
+        "relationships",
+        "male/BP/height_mass_interaction/pearson",
+        "reference",
+        "mean"
+      ],
+      "value": 0.4524361880274019,
+      "original_label": "rel/original/depth8_interleaved/male/BP/height_mass_interaction/pearson/reference",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/098/rel/original/depth8_interleaved/male/BP/height_mass_interaction/pearson/release",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_interleaved",
+        "relationships",
+        "male/BP/height_mass_interaction/pearson",
+        "release",
+        "mean"
+      ],
+      "value": 0.2698467931333336,
+      "original_label": "rel/original/depth8_interleaved/male/BP/height_mass_interaction/pearson/release",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/099/rel/original/depth8_interleaved/male/BP/height_mass_interaction/pearson/absolute_change",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_interleaved",
+        "relationships",
+        "male/BP/height_mass_interaction/pearson",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.18360621102104158,
+      "original_label": "rel/original/depth8_interleaved/male/BP/height_mass_interaction/pearson/absolute_change",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/100/rel/original/independent/male/BP/height_mass_interaction/pearson/absolute_change",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "independent",
+        "relationships",
+        "male/BP/height_mass_interaction/pearson",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.06689272902511677,
+      "original_label": "rel/original/independent/male/BP/height_mass_interaction/pearson/absolute_change",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/101/rel/original/bootstrap/male/BP/height_mass_interaction/pearson/absolute_change",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "bootstrap",
+        "relationships",
+        "male/BP/height_mass_interaction/pearson",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.05300356085085528,
+      "original_label": "rel/original/bootstrap/male/BP/height_mass_interaction/pearson/absolute_change",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/102/rel_diff/original/depth8_interleaved/male/BP/height_mass_interaction/pearson",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_interleaved",
+        "paired_differences",
+        "bootstrap",
+        "relationships",
+        "male/BP/height_mass_interaction/pearson",
+        "mean"
+      ],
+      "value": 0.1306026501701863,
+      "original_label": "rel_diff/original/depth8_interleaved/male/BP/height_mass_interaction/pearson",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/103/rel_diff_ci/original/depth8_interleaved/male/BP/height_mass_interaction/pearson",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "original",
+        "depth8_interleaved",
+        "paired_differences",
+        "bootstrap",
+        "relationships",
+        "male/BP/height_mass_interaction/pearson",
+        "bootstrap95"
+      ],
+      "value": [
+        0.09731309282453002,
+        0.16340450650383642
+      ],
+      "original_label": "rel_diff_ci/original/depth8_interleaved/male/BP/height_mass_interaction/pearson",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/104/rel/heavy_tails/depth8_outcomes_first/male/SQ/age_quadratic/pearson/reference",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "depth8_outcomes_first",
+        "relationships",
+        "male/SQ/age_quadratic/pearson",
+        "reference",
+        "mean"
+      ],
+      "value": 0.4695872490119733,
+      "original_label": "rel/heavy_tails/depth8_outcomes_first/male/SQ/age_quadratic/pearson/reference",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/105/rel/heavy_tails/depth8_outcomes_first/male/SQ/age_quadratic/pearson/release",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "depth8_outcomes_first",
+        "relationships",
+        "male/SQ/age_quadratic/pearson",
+        "release",
+        "mean"
+      ],
+      "value": 0.3674768299431925,
+      "original_label": "rel/heavy_tails/depth8_outcomes_first/male/SQ/age_quadratic/pearson/release",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/106/rel/heavy_tails/depth8_outcomes_first/male/SQ/age_quadratic/pearson/absolute_change",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "depth8_outcomes_first",
+        "relationships",
+        "male/SQ/age_quadratic/pearson",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.10781108301332212,
+      "original_label": "rel/heavy_tails/depth8_outcomes_first/male/SQ/age_quadratic/pearson/absolute_change",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/107/rel/heavy_tails/independent/male/SQ/age_quadratic/pearson/absolute_change",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "independent",
+        "relationships",
+        "male/SQ/age_quadratic/pearson",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.05545146412364275,
+      "original_label": "rel/heavy_tails/independent/male/SQ/age_quadratic/pearson/absolute_change",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/108/rel/heavy_tails/bootstrap/male/SQ/age_quadratic/pearson/absolute_change",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "bootstrap",
+        "relationships",
+        "male/SQ/age_quadratic/pearson",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.048940270867204275,
+      "original_label": "rel/heavy_tails/bootstrap/male/SQ/age_quadratic/pearson/absolute_change",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/109/rel_diff/heavy_tails/depth8_outcomes_first/male/SQ/age_quadratic/pearson",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "depth8_outcomes_first",
+        "paired_differences",
+        "bootstrap",
+        "relationships",
+        "male/SQ/age_quadratic/pearson",
+        "mean"
+      ],
+      "value": 0.05887081214611785,
+      "original_label": "rel_diff/heavy_tails/depth8_outcomes_first/male/SQ/age_quadratic/pearson",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/110/rel_diff_ci/heavy_tails/depth8_outcomes_first/male/SQ/age_quadratic/pearson",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "depth8_outcomes_first",
+        "paired_differences",
+        "bootstrap",
+        "relationships",
+        "male/SQ/age_quadratic/pearson",
+        "bootstrap95"
+      ],
+      "value": [
+        0.026880030616188454,
+        0.0970033682413084
+      ],
+      "original_label": "rel_diff_ci/heavy_tails/depth8_outcomes_first/male/SQ/age_quadratic/pearson",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/111/limit/z_mean_max",
+      "source": "study/results.json",
+      "keys": [
+        "limits",
+        "z_mean_max"
+      ],
+      "value": 0.1,
+      "original_label": "limit/z_mean_max",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/112/limit/z_sd_ratio_max",
+      "source": "study/results.json",
+      "keys": [
+        "limits",
+        "z_sd_ratio_max"
+      ],
+      "value": 0.1,
+      "original_label": "limit/z_sd_ratio_max",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/113/limit/z_tail_max",
+      "source": "study/results.json",
+      "keys": [
+        "limits",
+        "z_tail_max"
+      ],
+      "value": 0.2,
+      "original_label": "limit/z_tail_max",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/114/limit/correlation_max",
+      "source": "study/results.json",
+      "keys": [
+        "limits",
+        "correlation_max"
+      ],
+      "value": 0.05,
+      "original_label": "limit/correlation_max",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/115/limit/frozen_pc1_mean",
+      "source": "study/results.json",
+      "keys": [
+        "limits",
+        "frozen_pc1_mean"
+      ],
+      "value": 0.1,
+      "original_label": "limit/frozen_pc1_mean",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/116/limit/frozen_pc1_sd_ratio",
+      "source": "study/results.json",
+      "keys": [
+        "limits",
+        "frozen_pc1_sd_ratio"
+      ],
+      "value": 0.1,
+      "original_label": "limit/frozen_pc1_sd_ratio",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/117/limit/frozen_pc1_tail",
+      "source": "study/results.json",
+      "keys": [
+        "limits",
+        "frozen_pc1_tail"
+      ],
+      "value": 0.2,
+      "original_label": "limit/frozen_pc1_tail",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/118/limit/missing_fraction_change",
+      "source": "study/results.json",
+      "keys": [
+        "limits",
+        "missing_fraction_change"
+      ],
+      "value": 0.05,
+      "original_label": "limit/missing_fraction_change",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/119/limit/pc1_rmse",
+      "source": "study/results.json",
+      "keys": [
+        "limits",
+        "pc1_rmse"
+      ],
+      "value": 0.15,
+      "original_label": "limit/pc1_rmse",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/120/limit/pc1_bias",
+      "source": "study/results.json",
+      "keys": [
+        "limits",
+        "pc1_bias"
+      ],
+      "value": 0.1,
+      "original_label": "limit/pc1_bias",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/121/limit/pc1_correlation_loss",
+      "source": "study/results.json",
+      "keys": [
+        "limits",
+        "pc1_correlation_loss"
+      ],
+      "value": 0.01,
+      "original_label": "limit/pc1_correlation_loss",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/122/limit/variance_fraction_change",
+      "source": "study/results.json",
+      "keys": [
+        "limits",
+        "variance_fraction_change"
+      ],
+      "value": 0.05,
+      "original_label": "limit/variance_fraction_change",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/123/limit/weight_max",
+      "source": "study/results.json",
+      "keys": [
+        "limits",
+        "weight_max"
+      ],
+      "value": 0.05,
+      "original_label": "limit/weight_max",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/124/text_link/depth8_outcomes_first/exact/mean",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "privacy",
+        "depth8_outcomes_first/exact/cart",
+        "frozen",
+        "link_excess",
+        "mean"
+      ],
+      "value": 0.014157951673913705,
+      "original_label": "text_link/depth8_outcomes_first/exact/mean",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/125/text_link/depth8_outcomes_first/exact/t95",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "privacy",
+        "depth8_outcomes_first/exact/cart",
+        "frozen",
+        "link_excess",
+        "t95"
+      ],
+      "value": [
+        0.012701274072843795,
+        0.015614629274983614
+      ],
+      "original_label": "text_link/depth8_outcomes_first/exact/t95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/126/text_link/depth8_outcomes_first/strong/mean",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "privacy",
+        "depth8_outcomes_first/strong/cart",
+        "frozen",
+        "link_excess",
+        "mean"
+      ],
+      "value": 0.0025962692865652472,
+      "original_label": "text_link/depth8_outcomes_first/strong/mean",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/127/text_link/depth8_outcomes_first/strong/t95",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "privacy",
+        "depth8_outcomes_first/strong/cart",
+        "frozen",
+        "link_excess",
+        "t95"
+      ],
+      "value": [
+        0.0020338053662495408,
+        0.0031587332068809537
+      ],
+      "original_label": "text_link/depth8_outcomes_first/strong/t95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/128/text_link/depth8_interleaved/exact/mean",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "privacy",
+        "depth8_interleaved/exact/cart",
+        "frozen",
+        "link_excess",
+        "mean"
+      ],
+      "value": 0.01717033224817533,
+      "original_label": "text_link/depth8_interleaved/exact/mean",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/129/text_link/depth8_interleaved/exact/t95",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "privacy",
+        "depth8_interleaved/exact/cart",
+        "frozen",
+        "link_excess",
+        "t95"
+      ],
+      "value": [
+        0.015357354198476935,
+        0.01898331029787373
+      ],
+      "original_label": "text_link/depth8_interleaved/exact/t95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/130/text_link/depth8_interleaved/strong/mean",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "privacy",
+        "depth8_interleaved/strong/cart",
+        "frozen",
+        "link_excess",
+        "mean"
+      ],
+      "value": 0.00268374604714399,
+      "original_label": "text_link/depth8_interleaved/strong/mean",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/131/text_link/depth8_interleaved/strong/t95",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "original",
+        "privacy",
+        "depth8_interleaved/strong/cart",
+        "frozen",
+        "link_excess",
+        "t95"
+      ],
+      "value": [
+        0.001786271003288664,
+        0.003581221090999316
+      ],
+      "original_label": "text_link/depth8_interleaved/strong/t95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/132/text_copy_link/mean",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "privacy",
+        "depth8_outcomes_first/exact/copy_positive",
+        "adapted",
+        "link_member",
+        "mean"
+      ],
+      "value": 0.08156540423157585,
+      "original_label": "text_copy_link/mean",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/133/text_copy_link/t95",
+      "source": "study/results.json",
+      "keys": [
+        "models",
+        "heavy_tails",
+        "privacy",
+        "depth8_outcomes_first/exact/copy_positive",
+        "adapted",
+        "link_member",
+        "t95"
+      ],
+      "value": [
+        0.07624443852566577,
+        0.08688636993748593
+      ],
+      "original_label": "text_copy_link/t95",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/134/text_mass_relationship/depth8_interleaved/reference",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "depth8_interleaved",
+        "relationships",
+        "male/DL/mass/pearson",
+        "reference",
+        "mean"
+      ],
+      "value": 0.31376740088227817,
+      "original_label": "text_mass_relationship/depth8_interleaved/reference",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/135/text_mass_relationship/independent/reference",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "independent",
+        "relationships",
+        "male/DL/mass/pearson",
+        "reference",
+        "mean"
+      ],
+      "value": 0.31376740088227817,
+      "original_label": "text_mass_relationship/independent/reference",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/136/text_mass_relationship/bootstrap/reference",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "bootstrap",
+        "relationships",
+        "male/DL/mass/pearson",
+        "reference",
+        "mean"
+      ],
+      "value": 0.31376740088227817,
+      "original_label": "text_mass_relationship/bootstrap/reference",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/137/text_mass_relationship/depth8_interleaved/release",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "depth8_interleaved",
+        "relationships",
+        "male/DL/mass/pearson",
+        "release",
+        "mean"
+      ],
+      "value": 0.2429322933034055,
+      "original_label": "text_mass_relationship/depth8_interleaved/release",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/138/text_mass_relationship/independent/release",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "independent",
+        "relationships",
+        "male/DL/mass/pearson",
+        "release",
+        "mean"
+      ],
+      "value": 0.31207366981811924,
+      "original_label": "text_mass_relationship/independent/release",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/139/text_mass_relationship/bootstrap/release",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "bootstrap",
+        "relationships",
+        "male/DL/mass/pearson",
+        "release",
+        "mean"
+      ],
+      "value": 0.30695534019261617,
+      "original_label": "text_mass_relationship/bootstrap/release",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/140/text_mass_relationship/depth8_interleaved/absolute_change",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "depth8_interleaved",
+        "relationships",
+        "male/DL/mass/pearson",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.08407694630949149,
+      "original_label": "text_mass_relationship/depth8_interleaved/absolute_change",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/141/text_mass_relationship/independent/absolute_change",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "independent",
+        "relationships",
+        "male/DL/mass/pearson",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.06378157510091628,
+      "original_label": "text_mass_relationship/independent/absolute_change",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/142/text_mass_relationship/bootstrap/absolute_change",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "bootstrap",
+        "relationships",
+        "male/DL/mass/pearson",
+        "absolute_change",
+        "mean"
+      ],
+      "value": 0.053686811692328175,
+      "original_label": "text_mass_relationship/bootstrap/absolute_change",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/143/text_mass_difference/mean",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "depth8_interleaved",
+        "paired_differences",
+        "bootstrap",
+        "relationships",
+        "male/DL/mass/pearson",
+        "mean"
+      ],
+      "value": 0.030390134617163306,
+      "original_label": "text_mass_difference/mean",
+      "phase": "artificial"
+    },
+    {
+      "label": "artificial/144/text_mass_difference/bootstrap95",
+      "source": "diagnostics/results.json",
+      "keys": [
+        "models",
+        "shifted_mixed",
+        "depth8_interleaved",
+        "paired_differences",
+        "bootstrap",
+        "relationships",
+        "male/DL/mass/pearson",
+        "bootstrap95"
+      ],
+      "value": [
+        0.01841386200232502,
+        0.043265164228779886
+      ],
+      "original_label": "text_mass_difference/bootstrap95",
+      "phase": "artificial"
+    }
+  ]
+}

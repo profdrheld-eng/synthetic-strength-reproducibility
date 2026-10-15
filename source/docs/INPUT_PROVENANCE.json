@@ -1,0 +1,74 @@
+{
+  "scope": "Own frozen artificial kernels and artificial fixtures; published constants excluded from ownership claims",
+  "files": {
+    "fixtures/S1_reference_constants.csv": {
+      "sha256": "8dfced2ac7af73a7602d35d2f089559accf6f7f2bffb1d4bbd7afc439c08baa7"
+    },
+    "fixtures/S4_unchanged_preservation_limits.csv": {
+      "sha256": "9230dd4ae53d5fc2f6108d05df7fa3d994b71dd3422902a338b74f590f5885a6"
+    },
+    "fixtures/privacy_adaptive_shadow_parameters.json": {
+      "sha256": "52b8ad9bc98e99e71909a7fa30ed02fff725bb73fdfc24cea8c560c8a663d44d"
+    },
+    "fixtures/privacy_shadow_parameters.json": {
+      "sha256": "76efecac2a4ac6b0d3b114248be5e6c13a721902573462a829d5727bf0c6f0e2"
+    },
+    "joint_strength/__init__.py": {
+      "sha256": "78261f76849c9c63670e7cbc83a65dc941c2c9995ddc905590a9dbcf1a74e335"
+    },
+    "joint_strength/__main__.py": {
+      "sha256": "f98587ef907fdafcfdc10cfa7761a4a19381299f72be1e19eadbfeeca6ec34db"
+    },
+    "joint_strength/pc1.py": {
+      "sha256": "aa39a34cbb685eabfc7753c27e1272c703f41740a9416ce163a652bcffd19284"
+    },
+    "joint_strength/runner.py": {
+      "sha256": "a85fd673f06fe4c3c4946dde39dbcc0d98fa6432b43e59d2df2e30acf16f7fa1"
+    },
+    "joint_strength/study.py": {
+      "sha256": "b9cfed9ff13984ea6d8aeb0027048c575cf929e4d2594f9a81e646fd23610e33"
+    },
+    "joint_strength/utility.py": {
+      "sha256": "14b35d5a5621e63303a2a9e776fa649feb7a593bf1959d7e08ab91a898b0c2ad"
+    },
+    "strength_privacy/__init__.py": {
+      "sha256": "76769b3c832af1269894780aa2c358e4cf8f587427685bae5a3548bc04744b89"
+    },
+    "strength_privacy/adaptive.py": {
+      "sha256": "f1b72043937e8479de2cd3d56b7d28cfb6c67946e714462928c253e35194c209"
+    },
+    "strength_privacy/attacks.py": {
+      "sha256": "f0bf725b6232babb91e8942e5c5363c71b0cd813f94c5bfe8791c71705bd9be2"
+    },
+    "strength_privacy/design.py": {
+      "sha256": "1bb25815bfb054969b923cb9c4da10012dc36c160a3a7ee75abcc37aadf6940a"
+    },
+    "strength_privacy/norms.py": {
+      "sha256": "6a0b8e22d9990bb0c93926639614fef3d77ac98d5e7d3b9f4c6ec3c068368aef"
+    },
+    "strength_privacy/population.py": {
+      "sha256": "1c285dc9db247ef6ced434d3eff97c3fe044eb19d2f2568ae6fb570b848412d4"
+    },
+    "strength_privacy/relationships.py": {
+      "sha256": "06daa2207ad0f33c52d30bb64a907c191b7404389227e7b161b14b6f5ecab528"
+    },
+    "strength_privacy/scores.py": {
+      "sha256": "eedfcc7d79169e1fb1a279023c9aca46405f244a10febf22f0f53756affa07c3"
+    },
+    "strength_privacy/statistics.py": {
+      "sha256": "60b2cd0fe238d772da1a6075ed75ca9c45c991d8e005d5c4eb729f980d12e33a"
+    },
+    "strength_privacy/synthesis.py": {
+      "sha256": "5d71a9fede51374312ad12eaf28234b642fa0e31870b1548e9eba0eaa9870a6a"
+    },
+    "strength_privacy/validation.py": {
+      "sha256": "1ebb71cd7b6ed2b75dc3815aa4d3fc464d055980027737e3a596f7161013d5dc"
+    },
+    "tests/test_joint.py": {
+      "sha256": "dffcf103c68b7794a78ecad5ad5ff845effc2960a342b7af256f38e5fd083dfa"
+    },
+    "tests/test_study.py": {
+      "sha256": "1fa28975389480c60789398767bbc5faff26615c0d3a984db687ee3b44fac25f"
+    }
+  }
+}

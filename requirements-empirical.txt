@@ -1,0 +1,16 @@
+# Python 3.12; macOS 14+ arm64 wheels and universal dependencies.
+# Deliberately platform-specific; other platforms are not validated.
+cloudpickle==3.1.2
+joblib==1.6.0
+narwhals==2.27.1
+numpy==2.5.2
+scikit-learn==1.9.0
+scipy==1.18.0
+threadpoolctl==3.7.0
+pandas==2.2.3
+openpyxl==3.1.5
+python-dateutil==2.9.0.post0
+pytz==2026.5
+tzdata==2026.5
+six==1.17.0
+et_xmlfile==2.0.0

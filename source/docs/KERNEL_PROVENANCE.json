@@ -1,0 +1,105 @@
+{
+  "scope": "Historical port lineage only; see current INPUT_PROVENANCE.json for selected kernel identity",
+  "historical_prototypes": {
+    "strength_testbed.py": {
+      "sha256": "04182181ba8738a443711f8f71cdb559801ea132cf03aeed8e42b135c6cc6daa",
+      "symbols": [
+        "LIFTS",
+        "NORM_STATUS",
+        "COEFFICIENTS",
+        "RSD",
+        "log_expected",
+        "z_score",
+        "make_artificial"
+      ]
+    },
+    "sensitivity.py": {
+      "sha256": "3461334cabf3910600e19b65cd08ae329dfeff93a96fc220a56ace9d2a6c397e",
+      "symbols": [
+        "LIMITS",
+        "recalculate",
+        "encode_scores"
+      ]
+    },
+    "relationship_stress.py": {
+      "sha256": "54dd2bbed5400d3bcea19cd3bc42f03a8b49d964f509895a0e02c6d0722a8e13",
+      "symbols": [
+        "features",
+        "signal",
+        "make"
+      ]
+    },
+    "variance_diagnostics.py": {
+      "sha256": "a33739e0e9b3e51aa1fe4222d2509a4f8e302cd9a7a3c554e92c791873ca3bad",
+      "symbols": [
+        "eta_matrix",
+        "sample_matrix"
+      ]
+    },
+    "cart_grid.py": {
+      "sha256": "a3a88f7ec38c609776b267bea6b22fe1b15c7619f715265a2ce4f167ba912f36",
+      "symbols": [
+        "generate"
+      ]
+    },
+    "privacy_attacks.py": {
+      "sha256": "5ec596989003709f231edb368154ff738292e3c8e5126ffca43ed08e6f0e31a8",
+      "symbols": [
+        "WIDTHS",
+        "matrix",
+        "check_disjoint",
+        "neighbours",
+        "bridge",
+        "predict",
+        "predicates",
+        "evaluate"
+      ]
+    },
+    "privacy_robustness.py": {
+      "sha256": "38062f57a67510b5db7fcff04b915822edb693def0f34ecc020500f00bc39dd3",
+      "symbols": [
+        "NOISE",
+        "population",
+        "observed",
+        "auxiliary_confirmation",
+        "evaluate"
+      ]
+    },
+    "privacy_adaptive.py": {
+      "sha256": "a4d2d79e12b37cbb036d0ad779a2aa8ca665320280b0d85f25a98ea3f0a1a610",
+      "symbols": [
+        "SHADOW_SEEDS",
+        "TEST_SEEDS",
+        "CANDIDATES",
+        "infer",
+        "score",
+        "scales_from",
+        "families",
+        "family_key",
+        "development",
+        "combine"
+      ]
+    },
+    "privacy_pilot.py": {
+      "sha256": "9168177c99c799aa5fe6df59f1a2ecc65fa615cf111760cc99758fbd3fb56065",
+      "symbols": [
+        "develop"
+      ]
+    },
+    "privacy_benchmark.py": {
+      "sha256": "1c7b5b63d6a89f42a8fbb116cccc662788d57bbf10d41fec086948d6ac78abdc",
+      "symbols": [
+        "interval"
+      ]
+    },
+    "privacy_control_audit.py": {
+      "sha256": "14fa7c9f33686510816d5d5e2c1720e4de81ddaec3078a351b1d20fe11645700",
+      "symbols": [
+        "PRIMARY",
+        "holm",
+        "pvalue",
+        "variance_components"
+      ]
+    }
+  }
+}
