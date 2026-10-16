@@ -22,8 +22,8 @@
       "bytes": 1942
     },
     "README.md": {
-      "sha256": "83368954099497879ca168d3ba0450e2d8bd48084e17658c0596240f5ee51c69",
-      "bytes": 5410
+      "sha256": "f54be540f02f1fe7506562ccda3f6413f6dbbdba4bcd94e64c6b27b364f2087c",
+      "bytes": 6144
     },
     "diagnostics/diagnose.py": {
       "sha256": "625dab4d98cf09435702056c79833145bdc278a706365a668dd67b040f7c764c",
@@ -42,16 +42,16 @@
       "bytes": 5334
     },
     "docs/METHOD_MAP.md": {
-      "sha256": "b251b9e31d26dc1738cc64b463662bec160ee35e0a3448ce63af923dc7569327",
-      "bytes": 3835
+      "sha256": "14e148b917dad737f25333ae81a5f0e8caa4902b7f9d92706bf45e0ed6feab2c",
+      "bytes": 3933
     },
     "docs/PROVENANCE.md": {
-      "sha256": "7825f67e182180cbd85c59faf8ffd585402d6b891bbe9c7d39ab7ae09ccb615e",
-      "bytes": 2965
+      "sha256": "90fc24889551f0e72296eb7db20bcb5b0d94e3a591f3d3dfbe08a81f4d2cfe8b",
+      "bytes": 3647
     },
     "docs/VERIFICATION.md": {
-      "sha256": "e1eff65957296da9a2e30e827c4ab5e5ba7dbb559c30f87f531d4bd30ea634f3",
-      "bytes": 8105
+      "sha256": "b8af3076825eac4415b22aa9ce616d33277d2c39737f3b628f298821a8d0977a",
+      "bytes": 8674
     },
     "empirical/artificial_parameters.py": {
       "sha256": "9b478ebb094a182a3d81a40dcab49aefac048ed72c1934bc0914294a6e4856e5",

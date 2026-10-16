@@ -29,15 +29,17 @@ does not establish equivalence. There is no anonymity certification or release
 permission implicit in these results.
 
 The artificial reference uses transcribed published rounded reduced equations
-and corrected associated residual scales. Its rounding remains a limitation.
+and corrected associated residual scales. Equation rounding and the unverified
+original residual-scale denominator remain limitations.
 The empirical reference uses historical unrounded coefficients and sample
 residual SD (`n-1`), supplied separately. These references are deliberately not
 silently substituted for each other.
 
 The inherited artificial status token `PROVISIONAL_ROUNDED_UNVERIFIED_RSD` is
 retained for frozen-code identity. The selected fixtures contain the corrected
-published reduced-model residual scales; the provisional scientific limitation
-concerns use of rounded published equations. Do not interpret that historical
+published reduced-model residual scales; the provisional scientific limitations
+concern equation rounding and the unresolved original scale-denominator definition.
+Do not interpret that historical
 token as a new verification result or as a switch to empirical parameters.
 
 Published norm source: Isenmann E, Geisler S, Havers T, Gavanda S, Diel P, Held S,

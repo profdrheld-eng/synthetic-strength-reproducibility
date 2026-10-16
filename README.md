@@ -2,8 +2,9 @@
 
 Minimal code companion for a methodological study combining artificial experiments
 and a local audit of strength z-scores and a principal-component strength index.
-This is a private working repository, not a data release or a submitted paper.
-Manuscript authorship and final human approval remain open.
+Authors: Steffen Held and Eduard Isenmann. Both conceived the study and revised
+the manuscript; Held developed the code, performed the analyses and wrote the
+manuscript. This repository is the code companion, not a participant-data release.
 
 The question is whether two fixed CART synthesis configurations preserve the
 specified scientific results while limiting attack success. Preservation and
@@ -89,9 +90,18 @@ Published formula constants, third-party software and cited publications are
 excluded from those ownership claims. Dependency installation uses upstream
 licences; this repository contains no copies of their source distributions.
 
-AI tools assisted coding, checking and wording. Automated checks do not replace
-author responsibility, independent scientific validation or final human review.
-No paper author list or completed human approval is asserted here.
+OpenAI Codex supported creation of this repository, code development, explanatory
+code comments, debugging, reproducibility checks and documentation. It also
+supported preparation of publication materials, as disclosed in the manuscript.
+Steffen Held and Eduard Isenmann confirmed completion of their review of the code,
+results, manuscript and AI-assisted materials on 16 October 2026. The authors
+retain responsibility for scientific decisions and released materials. Automated
+checks do not establish absence of errors or independent scientific validation.
+
+This public repository distributes only the minimal code companion and selected
+artificial aggregate validation targets. Original participant records, empirical
+synthetic rows, historical parameter exports, empirical output collections,
+manuscript and publication figures are excluded.
 
 The corrected code at commit `7a8615a2bac34a9a6066be0b56089e4249e685d5` has
 completed an authorized local empirical reproduction from a fresh GitHub clone
@@ -99,4 +109,4 @@ and new environment. All 166 registered empirical entries and 545 numerical
 table cells were confirmed within the fixed tolerance. See the bounded
 [verification summary](docs/VERIFICATION.md); protected inputs, empirical outputs
 and detailed audit records remain local. Later documentation-only changes do
-not change the tested analysis code. The repository remains private.
+not change the tested analysis code. Protected empirical materials remain local.

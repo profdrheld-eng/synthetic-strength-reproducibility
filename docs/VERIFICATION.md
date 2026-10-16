@@ -1,4 +1,4 @@
-# Verification status, 15 October 2026
+# Verification status, 16 October 2026
 
 This is a technical verification record, not final human approval of the paper
 or a privacy certification. Initial packaging and independent review used
@@ -17,8 +17,8 @@ artificial inputs; a subsequent authorized empirical fresh run is recorded below
 | Full artificial reproduction | PASS | All 30 cohorts, 6,000 CART releases and 6,000 natural comparisons completed; all 145 reported artificial values reproduced with zero difference |
 | Corrected-GitHub empirical fresh reproduction | PASS | Fresh checkout of commit `7a8615a2bac34a9a6066be0b56089e4249e685d5`, new environment, 166 registered entries and 545 numerical table cells confirmed |
 | Public empirical reference targets | NOT INCLUDED | The 166-entry empirical register and empirical aggregates are outside this minimal package |
-| Final human paper review / authorship | OPEN | No completed approval or author list asserted |
-| GitHub visibility | PRIVATE | Own account `profdrheld-eng`, repository `synthetic-strength-reproducibility`; no public release |
+| Final human paper review / authorship | AUTHOR-CONFIRMED COMPLETE | Steffen Held and Eduard Isenmann; completion reported by the authors on 16 October 2026, separately from automated verification |
+| GitHub visibility | PUBLIC CODE PACKAGE | `profdrheld-eng/synthetic-strength-reproducibility`; participant records and protected empirical materials excluded |
 
 The complete artificial calculation uses the same seven hash-locked numerical
 dependencies as the fixed original experiment. The separate fresh optional
@@ -112,3 +112,11 @@ does not validate anonymity, scientific equivalence limits, independent
 implementation or author approval. The code at the tested commit is unchanged
 by this later documentation-only update. With unchanged code and inputs, no
 additional empirical fresh run is currently required.
+
+## Code publication audit, 16 October 2026
+
+The publication check inspects the exact tracked allowlist and reachable Git
+history and repeats the existing artificial test suite. No original participant
+data or stored model is opened. Scientific code, seeds, methods and limits remain
+unchanged from the tested version. The human-review statement above records the
+authors' confirmation; it is not inferred from these technical checks.

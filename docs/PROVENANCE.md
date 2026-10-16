@@ -43,5 +43,15 @@ separately before handoff. Generated outputs, raw data and internal audit logs
 remain outside the repository. Neither a hash nor private visibility proves
 scientific correctness, ownership or anonymity.
 
-AI assistance covered coding, technical checks and prose. Final human review and
-paper authorship remain open. No final human approval is attributed to any person.
+OpenAI Codex supported creation of this repository, code development, explanatory
+code comments, debugging, reproducibility checks and documentation. It also
+supported preparation of publication materials, as disclosed in the manuscript.
+Steffen Held and Eduard Isenmann confirmed completion of their review of the code,
+results, manuscript and AI-assisted materials on 16 October 2026. The authors
+retain responsibility for scientific decisions and released materials. Automated
+checks do not establish absence of errors or independent scientific validation.
+
+This public repository distributes only the minimal code companion and selected
+artificial aggregate validation targets. Original participant records, empirical
+synthetic rows, historical parameter exports, empirical output collections,
+manuscript and publication figures are excluded.
